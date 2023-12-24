@@ -1,15 +1,12 @@
-import java.util.*;
-
 class Solution {
     public int[] solution(long n) {
-        String str = String.valueOf(n);
-        int length = str.length();
+        String str = Long.toString(n);
+        String reversed = new StringBuilder(str).reverse().toString();
+        char[] arr = reversed.toCharArray();
         
-        int[] answer = new int[length];
-      
-        for(int i=0; i<length; i++){
-            answer[i]=str.charAt(length-1-i)-'0'; 
-            //ASCII '0' = 48. 문자의 아스키코드를 정수로 변환하기 위함
+        int[] answer = new int[arr.length];
+        for(int i=0; i<answer.length; i++){
+            answer[i] = Character.getNumericValue(arr[i]);
         }
         return answer;
     }
