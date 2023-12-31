@@ -1,10 +1,10 @@
 # [level 1] 문자열 다루기 기본 - 12918 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12918#qna) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12918) 
 
 ### 성능 요약
 
-메모리: 77.1 MB, 시간: 0.04 ms
+메모리: 72.6 MB, 시간: 0.12 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 12월 6일 21:34:30
+2023년 12월 0일 19:33:9
 
 ### 문제 설명
 
