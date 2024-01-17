@@ -1,6 +1,6 @@
 class Solution {
     public String solution(int[] food) {
-        StringBuilder builder = new StringBuilder();
+        StringBuilder left = new StringBuilder();
         int[] cnt = new int[food.length]; 
         for(int i=1; i<food.length; i++){
             if(food[i]%2==1){
@@ -11,13 +11,13 @@ class Solution {
         
         for(int i=1; i<cnt.length; i++){
             for(int j=0; j<cnt[i]; j++){
-                builder.append(String.valueOf(i)); 
+                left.append(String.valueOf(i)); 
             }
         }
         
-        String reversed = new StringBuilder(builder).reverse().toString();
+        String right = new StringBuilder(left).reverse().toString();
         
-        return builder + "0" + reversed;
+        return left + "0" + right;
        
     }
 }
