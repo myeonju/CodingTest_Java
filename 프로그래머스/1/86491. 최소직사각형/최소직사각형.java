@@ -1,7 +1,7 @@
 class Solution {
     public int solution(int[][] sizes) {
-        int maxW = Integer.MIN_VALUE;
-        int maxH = Integer.MIN_VALUE;
+        int maxW = 0;
+        int maxH = 0;
         
         for(int i=0; i<sizes.length; i++){
             int w = sizes[i][0];
