@@ -23,17 +23,15 @@ public class Main {
         Arrays.sort(sortedCoordinates);
 
         Map<Integer, Integer> compressedCoordinates = new HashMap<>();
-        int compressed = 0;
         for(int s:sortedCoordinates){
             if(!compressedCoordinates.containsKey(s)){
-                compressedCoordinates.put(s,compressed);
-                compressed++;
+                compressedCoordinates.put(s, compressedCoordinates.size());
             }
         }
 
         StringBuilder sb = new StringBuilder();
         for(int key:coordinates){
-          int result = compressedCoordinates.get(key);
+            int result = compressedCoordinates.get(key);
             sb.append(result).append(' ');
         }
 
