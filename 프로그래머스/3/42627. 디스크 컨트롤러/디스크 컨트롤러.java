@@ -3,7 +3,13 @@ import java.util.*;
 class Solution {
     public int solution(int[][] jobs) {
         
-        PriorityQueue<int[]> pq = new PriorityQueue<>((o1, o2) -> o1[1] - o2[1]); 
+        PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[1] - o2[1];
+            }
+        });
+        
         Arrays.sort(jobs, (o1, o2) -> o1[0] - o2[0]); 
         
         int cnt = 0; 
