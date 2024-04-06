@@ -24,6 +24,7 @@ public class Main {
             return dp[N];
         }
         dp[N] = P(N - 1) + P(N - 5);
+
         return dp[N];
     }
 }
